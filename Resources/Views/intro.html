@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Hacker in whatever.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            margin: 20px;
+            font-family: 'Apple SD Gothic Neo', 'Helvetica', 'Arial';
+        }
+
+        .container {
+            width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+
+            position: absolute;
+            top:  35%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+
+        .profileimg {
+            border-radius: 75px;
+            width: 150px;
+            height: 150px;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 2.0em;
+            color: #555;
+        }
+
+        h1 > small {
+            font-size: 0.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 300px;
+        }
+
+        ul {
+            padding-left: 30px;
+            font-size: 1.1em;
+        }
+
+        @media screen and (min-width: 550px) {
+            .content-wrap {
+                margin-left: 30px;
+            }
+
+            .profile-wrap, .content-wrap {
+                float: left;
+            }
+
+            h1 {
+                margin-top: 35px;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .container {
+                width: 260px;
+                padding: 0;
+            }
+            .content-wrap small {
+                font-size: 0.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="content-wrap">
+
+        <div class="text-center">
+            <img class="profileimg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAApAAAAAJGFjYTM5ZDYyLTU0MTktNGM0NS04YmFmLTA1OTFmOWQ1ZmE2Ng.jpg" class="rounded" alt="photo" width="200" height="200">
+        </div>
+
+        <div align="center">
+            <p><h1><strong>Seoksoon Jang</strong></h1></p>
+            <p><h5>I am Looking for jobs.</h5>
+        </div>
+        <br>
+        <div class="col-xs-1" align="center">
+            <button type="button" class="btn btn-primary" onclick="sendEmail()">Send mail</button>
+        </div>
+
+        <br>
+        <div>
+            <p>
+            <ul>
+                <li>Here is my <a href="./resume">Resume.</a></li>
+                <li>I am <a href="https://github.com/boraseoksoon">@boraseoksoon</a> on Github.</li>
+                <li>I am <a href="https://stackoverflow.com/users/3426053/boraseoksoon/">@boraseoksoon</a>on StackOverflow</li>
+                <li>I am <a href="https://medium.com/@boraseoksoon/">@boraseoksoon</a> on Medium.</li>
+                <li>This is my <a href="https://www.linkedin.com/in/seoksoon-jang-2042498a/">Linked-in</a> page.</li>
+                <li>Sometimes, I enjoy work as freelancer Hacker in <a href="https://www.wishket.com/partners/p/boraseoksoon/">Wishket</a>.</li>
+            <!--
+                <li>I am interested in creating large scale and data-intensive software for end-user that changes world like Google and Facebook.</li>
+                <li>My objective is to create and improve large scale and data-intensive software for end-user that changes world like Google and Facebook using from low level to high-level abstracted software stack if needed.</li>
+            -->
+                <!--
+                <li>Other Opensource repositories I use are as below</li>
+                    <ul>
+                        <li><a href="https://cocoapods.org/owners/2462">CocoaPods</a></li>
+                    </ul>
+                </ul>
+                -->
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script>
+    function sendEmail() {
+        console.log("sendEmail!")
+        window.location.href = "mailto:boraseoksoon@gmail.com"
+    }
+</script>
+</body>
+</html>

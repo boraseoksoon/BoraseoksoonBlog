@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+    <title>Seoksoon Jang's Resume</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+
+<body>
+
+<h1>Seoksoon Jang</h1>
+<a href="mailto:boraseoksoon@gmail.com"><tt>boraseoksoon@gmail.com</tt></a><br>
+
+<p>
+    My current objective is to create software systems that can change and improve world uch as Google, Facebook(for end-user) and Swift(C/C++/Objective-C user?), Node.js(for javascript user), not caring from low-level to abstracted high-level software stack if required.
+    <br>I am interested in Compiler(in particular, LLVM), Computer Architecture and Systems and creating infra-structure software for application software-developer like library and framework(for example: Foundation/UIKit in Apple platforms and Java Spring framework)
+
+    Other random topics that interest me are: Functional Programming, Object Oriented Programming, Open-source,
+    I would like to combine my interests well into the one and
+
+    development of novel techniques as well as the application of known
+    engineering principles.  I am a proven technical leader, who likes to grapple
+    with hard engineering
+    problems that most people assume are impossible to solve.  I enjoy leading by
+    example and getting my hands dirty.  I have worked in many spaces, including
+    things as diverse as low level machine code optimization, compiler
+    optimization, programming language design, IDE features, built the <a
+            href="https://www.apple.com/swift/playgrounds/">Swift
+        Playgrounds iPad app</a>, and ran a team at Tesla applying a diverse range
+    of tech in the autonomous car space (including machine learning, computer
+    vision, sensors and non-vision perception, robotics planning and control, mapping, cloud infrastructure, embedded systems, and simulation).</p>
+
+<!--
+<p>I am the founder and chief architect of the open source <a href="http://llvm.org">LLVM Compiler
+    Infrastructure project</a>, and serve on the board of directors of the LLVM Foundation.
+    LLVM has
+    grown to include a broad range of compiler, debugger, and runtime library
+    technologies.  Assembled out of this technology are things like the <a
+            href="http://clang.llvm.org">Clang compiler</a>, the <a
+            href="http://lldb.llvm.org">LLDB debugger</a>, the <a
+            href="http://clang-analyzer.llvm.org/">Clang Static Analyzer</a>, and
+    other low-level tools.
+    LLVM is widely used for <a href="http://llvm.org/pubs/">academic research
+        projects</a>, has been adopted for <a
+            href="http://llvm.org/Users.html">commercial use by several companies</a>,
+    and has a broad and growing
+    developer base.  For more information, please see the LLVM web
+    page: <a href="http://llvm.org">http://llvm.org/</a>.</p>
+
+<p>I am also the founder and project lead for the <a
+        href="https://en.wikipedia.org/wiki/Swift_(programming_language)">Swift Programming
+    Language</a>, which is open source at <a href="https://swift.org/">Swift.org</a> and <a
+        href="https://github.com/apple/swift">GitHub</a>.  Swift has been steadily and rapidly
+    growing ever since its launch, with over 100,000 apps in the Apple app stores,
+    is installed on millions of developer workstations, and is widely loved by people who use it.
+    Since its release as open source, Swift is rapidly growing in the server space and in
+    other domains outside of the traditional Apple developer community.
+</p>
+
+<p>I am a strong leader and have excellent communication skills (both
+    verbal and written).  I occasionally give talks explaining and evangelizing
+    Swift, LLVM, Clang, and other technologies I have worked on.</p>
+-->
+<h2>Resume Contents:</h2>
+<ul>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#workhistory">Work History</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#talks">Invited Talks</a></li>
+    <li><a href="#books">Book Chapter</a></li>
+    <li><a href="#pubs">Refereed Publications</a></li>
+    <li><a href="#other">Other Interests and Activities</a></li>
+</ul>
+
+
+<h2><a name="awards">Awards and Recognition</a></h2>
+
+<p>Notable awards:</p>
+
+<ul>
+
+    <li>2016: Recognized as one of Wired's "<a href="https://www.wired.com/2016/04/wired-nextlist-2016/">25 Geniuses who are creating the future of business</a>".</li>
+
+    <li>2013: Received the <a href="http://cs.illinois.edu/about-us/awards/distinguished-alumni">2013
+        Distinguished Alumni Achievement Award</a> by the <a
+            href="http://cs.illinois.edu">University of Illinois Computer Science Department</a>.</li>
+
+    <li>
+        2012: LLVM was awarded the <a
+            href="http://awards.acm.org/award_winners/lattner_5074762.cfm">ACM Software Systems
+        Award</a> which recognizes a software system that has had a lasting influence,
+        reflected in contributions to concepts, in commercial acceptance, or both
+        (across the entire software industry).  Previous recipients include Java, Apache, the
+        World-Wide Web, SMALLTALK, UNIX, and many other notable software systems.</li>
+
+    <li>
+        2010: Received the <a
+            href="http://www.sigplan.org/Awards/Software/Main">ACM SIGPLAN Programming Languages Software Award</a>
+        in <a href="http://www.acm.org/press-room/news-releases/2010/sigplan-software-award/view">recognition of my work on LLVM</a>.
+        SIGPLAN is the ACM Organization focusing on Programming Language Design and
+        Implementation.
+        Being the first year this was awarded is notable, because all programming
+        language software systems were eligible.</li>
+</ul>
+
+<h2><a name="workhistory">Work History</a></h2>
+
+<h3><a name="Tesla">Tesla</a></h3>
+
+<ul>
+    <li>
+        <b>VP Autopilot Software</b><br>
+        January 30 - June 20, 2017
+
+        <p>
+            When I joined Tesla, it was in the midst of a hardware transition from
+            "Hardware 1" Autopilot (based primarily on MobileEye for vision processing)
+            to "Hardware 2", which uses an in-house designed TeslaVision stack.  The
+            team was facing many tough challenges given the nature of the transition.
+            My primary contributions over these fast five months were:</p>
+
+        <ul>
+            <li>We evolved Autopilot for HW2 from its <a href="https://electrek.co/2017/01/21/tesla-first-phase-enhanced-autopilot/">first early release</a> (which had few
+                capabilities and was limited to 45mph on highways) to effectively parity with HW1, and
+                surpassing it in some ways (e.g. <a
+                        href="https://electrek.co/2017/05/21/tesla-autopilot-update-elon-musk/">silky
+                    smooth control</a>).</li>
+
+            <li>This required building and shipping numerous features for HW2, including: <a href="https://electrek.co/2017/02/15/tesla-autopilot-autosteer-local-roads-enhanced-autopilot/">support for local roads</a>, <a href="https://electrek.co/2017/02/23/tesla-enhanced-autopilot-autopark-parallel-parking/">Parallel Autopark</a>, <a href="https://electrek.co/2017/03/29/tesla-8-1-software-update-improves-autopilot-2-autosteer-summon/">High Speed Autosteer, Summon, Lane Departure Warning, Automatic Lane Change</a>, <a href="https://electrek.co/2017/04/26/tesla-automatic-emergency-braking-autopilot-architecture/">Low Speed AEB</a>, <a href="https://electrek.co/2017/05/06/tesla-autopilot-update-removing-autosteer-restriction/">Full Speed Autosteer, Pedal Misapplication Mitigation, Auto High Beams, Side Collision Avoidance</a>, <a href="https://electrek.co/2017/06/10/tesla-autopilot-update-smooth-autopark/">Full Speed AEB, Perpendicular Autopark, and 'silky smooth' performance</a>.</li>
+
+            <li>This was done by shipping a total of 7 major feature releases, as well as
+                numerous minor releases to support factory, service, and other narrow
+                markets.</li>
+
+            <li>One of Tesla's huge advantages in the autonomous driving space is that it
+                has tens of thousands of cars already on the road.  We built infrastructure to take
+                advantage of this, allowing the collection of <a
+                        href="https://electrek.co/2017/05/06/tesla-data-sharing-policy-collecting-video-self-driving/">image and video data</a> from this fleet, as well as building <a href="https://electrek.co/2017/06/14/tesla-autopilot-data-floodgates/">big data infrastructure</a> in the cloud to process and use it.</li>
+
+            <li>I defined and drove the feature roadmap, drove the technical architecture
+                for future features, and managed the implementation for the
+                next exciting features to come.</li>
+
+            <li>I advocated for and drove a major rewrite of the deep net
+                architecture in the vision stack, leading to significantly better precision,
+                recall, and inference performance.</li>
+
+            <li>I ended up growing the Autopilot Software team by over 50%.  I personally interviewed most of the accepted candidates.</li>
+
+            <li>I improved internal infrastructure and processes that I
+                cannot go into detail about.</li>
+
+            <li>I was closely involved with others in the broader Autopilot program,
+                including future hardware support, legal, homologation, regulatory,
+                marketing, etc.</li>
+        </ul>
+
+        <p>
+            Overall I learned a lot, worked hard, met a lot of great people, and
+            had a lot of fun.  I'm still a firm believer in Tesla, its mission, and the
+            exceptional Autopilot team: I wish them well.
+        </p>
+
+</ul>
+
+<h3><a name="Apple">Apple</a></h3>
+
+<ul>
+
+    <li>Apple: Developer Tools Department<br>
+        <b>Senior Director and Architect, Developer Tools Department</b><br>
+        January 2013 - January 2017
+
+        <p>In January 2013, I took over management and leadership of the entire Developer
+            Tools department at Apple (~200 people).  In addition to languages (Swift
+            and Objective-C), compilers and low-level tools, I took on responsibility for the
+            Xcode IDE, Instruments performance analysis tool, Apple Java releases, and a
+            variety of internal tools.<p>
+
+        <p>In this time period, my team shipped a number of major Xcode releases, including Xcode 4.6, 5.x, 6.x, 7.x, and 8.x, each with major feature enhancements.
+            Some of my more notable contributions include:</p>
+
+        <ul>
+            <li>ARM64: Over a 3 year span, I drove definition, bringup and implementation
+                work of the ARM64 (aka Aarch64) compiler toolchain - the first production quality
+                compiler for this architecture in the world - which shipped in Xcode 5.  This
+                enabled the iPhone 5s, which shocked the world with its <a
+                        href="http://en.wikipedia.org/wiki/Apple_A7">64-bit support and superb
+                    performance</a>.  In addition to
+                compiler work, I contributed to the design of a <a
+                        href="https://www.mikeash.com/pyblog/friday-qa-2013-09-27-arm64-and-you.html">new Objective-C runtime object
+                    model</a> for the architecture, and I personally contributed
+                the "TBI" feature to ARM, which was incorporated in the Aarch64 architecture.</li>
+            <li>iPhone GPU Compiler: we implemented a completely new LLVM-based runtime GPU
+                shader compiler. This started shipping in iOS7 to support the iPhone 5s - which
+                featured a VLIW <a
+                        href="http://en.wikipedia.org/wiki/PowerVR#Series_6_.28Rogue.29">PowerVR Rogue GPU</a>
+                derivative, and has been extended to support later iPhone hardware as it comes out.
+                Compared to the vendor compiler it replaced, this GPU compiler produces code
+                that runs slightly faster, and takes much less compile time to generate it.</li>
+            <li>Xcode 5 was a major release, notable for me in that it was the first
+                release with a completely LLVM-based low-level toolchain (Clang, LLDB, etc) - it
+                dropped the last support for GCC and GDB.  This transition
+                was largely driven by the ARM64 architecture transition.</li>
+            <li>Swift: The most prominent feature of Xcode 6 was <a
+                    href="http://en.wikipedia.org/wiki/Swift_(programming_language)">Swift</a>, a
+                new programming language that I had been personally driving since 2010.  In
+                addition to the language design and implementation, I drove much of the
+                compiler architecture (e.g. the SIL high-level IR), the REPL and Playgrounds
+                feature designs, drove and coordinated the rest of the team to implement full
+                Xcode and documentation support for a language that was still rapidly evolving.
+                We managed to keep extremely tight secrecy until a great launch at WWDC 2014.</li>
+            <li>I was the primary proponent for the <a href="http://developer.apple.com/swift/blog/">
+                Official Swift Blog</a> and wrote many of the posts.</li>
+            <li>I drove <a href="https://swift.org/">Swift Open Source</a> to happen, and was
+                extensively involved defining exactly what that meant.</li>
+            <li>I was one of the few core people who drove <a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds for iPad</a>, including conception,
+                design, implementation, and iteration.</li>
+            <li>I was a member of Apple's senior executive leadership team, and drove a number of internal
+                things that I can't talk about.</li>
+        </ul><br>
+    </li>
+
+    <li>Apple: Developer Tools Group<br>
+        <b>Director and Architect, Low-Level Tools</b><br>
+        September 2011 - January 2013
+
+        <p>This timeframe has included numerous technical and team achievements
+            across a wide range of domains.  For example:
+        </p>
+        <ul>
+            <li>Apple shipped the Mac OS X 10.8 and iOS 6 releases, and they were
+                built with Clang - llvm-gcc is obsolete, and GCC is long gone.</li>
+            <li>We invested major effort into compiler implementation and tuning for
+                the custom Apple CPU design known as the "<a
+                        href="http://en.wikipedia.org/wiki/Apple_A6">Apple A6</a>".  The
+                exceptional CPU performance of the iPhone 5 was a result of a joint effort
+                between the Apple silicon and LLVM teams.</li>
+            <li>I personally drove LLDB to production quality and to become the default
+                debugger in Xcode.</li>
+            <li>I drove the new "<a
+                    href="http://clang.llvm.org/docs/ObjectiveCLiterals.html">Objective-C
+                Literal Syntax</a>" language extensions, making many common
+                situations in Objective-C much more syntactically elegant.</li>
+            <li>We shipped <a href="http://en.wikipedia.org/wiki/Xcode#4.x_series">Xcode
+                4.3, 4.4, and 4.5 releases</a>, and I was a key part of the high level
+                feature planning and decision processes that defined the features and
+                shaped the releases.</li>
+        </ul><br>
+    </li>
+
+    <li>Apple: Developer Tools Group<br>
+        <b>Senior Manager and Architect, Low-Level Tools</b><br>
+        June 2010 - September 2011
+
+        <p>I managed the teams responsible for compilers, the LLDB debugger,
+            Objective-C and C++ runtimes, assembler, linker, dynamic loader, etc.  I
+            am continuing my work improving the Apple developer tools, and continue to
+            contribute daily to the open source LLVM technologies.  During this time
+            period my team switched Mac OS/X Lion and iOS5 to build with llvm-gcc and
+            clang (off of GCC 4.2) and oversaw the final release of Xcode 4.0 in March
+            (as well as subsequent updates).</p>
+        <p>Xcode 4.2 was a specific achievement in that it is the first release where
+            all of its compilers are LLVM-based (GCC 4.2 is no longer included).
+            Xcode 4.2 also includes the "<a
+                    href="http://clang.llvm.org/docs/AutomaticReferenceCounting.html">Automatic
+                Reference Counting</a> (ARC) Objective-C language feature (see also
+            <a href="http://en.wikipedia.org/wiki/Automatic_Reference_Counting">wikipedia</a>).
+            ARC has revolutionized Objective-C programming by automating memory
+            management without the runtime overhead of a garbage collector.  I personally
+            defined and drove this feature late in the schedule of iOS5 and Lion.  This
+            is notable for the short schedule for the project, the extensive
+            cross-functional work required, and the extensive backwards compatibility
+            issues that had to be addressed (making it a very technically complex
+            problem).</p>
+    </li>
+
+    <li>Apple: Developer Tools Group<br>
+        <b>Senior Manager of Compilers and Low-Level Tools, Compiler Architect</b><br>
+        September 2009 - June 2010
+
+        <p>My work in this time period culminated in the release of the Xcode 4 preview
+            at WWDC, which included a preview release of Clang C++ support, a new <a
+                    href="http://libcxx.llvm.org/">C++ Standard Library</a>, a much faster and
+            memory efficient system linker, a <a
+                    href="http://blog.llvm.org/2010/04/intro-to-llvm-mc-project.html">new X86
+                assembler</a> (which is integrated into the clang compiler, providing faster
+            compile times), and countless smaller improvements throughout the toolchain.</p>
+
+        <p>Xcode 4 itself now features deep integration of the Clang parser for code
+            completion, syntax highlighting, indexing, live warning and error messages,
+            and the new 'Fix-It' feature in which the compiler informs the UI how to
+            automatically corrects small errors.  LLVM-GCC is the default compiler in
+            Xcode 4.</p>
+
+        <p>The Xcode 4 preview also includes the first public release of <a
+                href="http://lldb.llvm.org">LLDB</a> to which I served as a
+            consultant and contributed directly to turning it into an open source
+            project.</p>
+    </li>
+
+    <li>Apple: Developer Tools Group<br>
+        <b>Manager of Compilers and Low-Level Tools, Compiler Architect</b><br>
+        July 2008 - September 2009
+
+        <p>In this time period, I was a second level manager running the teams responsible for
+            <a href="http://clang.llvm.org">Clang</a>,
+            <a href="http://llvm.org">LLVM</a>, <a href="http://gcc.gnu.org/">GCC</a>,
+            and other parts of the Apple toolchain (assembler, linker, etc).  I directly
+            managed the Clang team, contributed daily to both the Clang and LLVM projects,
+            and continued in my role as compiler architect and lead on the Open Source
+            LLVM/Clang projects.
+        </p>
+
+        <p>During this period my team brought Clang 1.0 to production quality as a
+            brand new C and Objective-C compiler for X86-32 and X86-64.  We also
+            productized and shipped the Xcode static analyzer, a new <a
+                    href="http://compiler-rt.llvm.org/">compiler-rt library</a>
+            (which replaced libgcc in Snow Leopard) and many enhancements to existing
+            components in the operating system.</p>
+
+    </li>
+
+    <li>Apple: Developer Tools Group<br>
+        <b>LLVM Compiler Group Manager and Compiler Architect</b><br>
+        December 2006 - July 2008
+
+        <p>In this time period, my group expanded use of LLVM within Apple, supported
+            new clients, built new features, and extended LLVM in many ways.
+            We shipped llvm-gcc 4.2 in the Xcode 3.1 and major improvements for it in the
+            Xcode 3.1.1 release.</p>
+
+        <p>In addition to llvm-gcc, much of the work during this time was focused on
+            Mac OS 10.6 development.  I made major contributions to design and
+            implementation of the <a
+                    href="http://lists.cs.uiuc.edu/pipermail/cfe-dev/2008-August/002670.html"
+            >"Blocks" language feature</a> as well as to the architecture and design of
+            the language and compiler aspects of the <a
+                    href="http://en.wikipedia.org/wiki/OpenCL">OpenCL</a> GPGPU technology.</p>
+
+        <p>Finally, during this period I architected and started implementation of a
+            suite of front-end technologies based on LLVM, named "<a
+                    href="http://clang.llvm.org">Clang</a>".
+        </p>
+
+    </li>
+
+    <li> Apple Computer Inc: Developer Tools Group<br>
+        <b>Senior Compiler Engineer and Tech Lead</b><br>
+        June 2005 - December 2006
+
+        <p>I drove LLVM productization, features and applications at Apple.
+            LLVM <a href="http://llvm.org/docs/LinkTimeOptimization.html">link-time
+                optimization</a> support is now integrated into the Apple
+            system linker, and LLVM is used by the <A
+                    href="http://lists.cs.uiuc.edu/pipermail/llvmdev/2006-August/006492.html">Apple
+                OpenGL group</a> for several different purposes.  My main contributions during
+            this time was a new llvm-gcc4 front-end, significant improvements to the X86
+            and PowerPC backends, a wide range of optimization improvements and new
+            optimizers, significant improvement to the target-independent code
+            generator, and leadership for the rest of the team.</p>
+    </li>
+</ul>
+
+<h3>Graduate School Work</h3>
+
+<ul>
+    <li>
+        University of Illinois at Urbana Champaign<br>
+        <b>Research Assistant</b><br>
+        Fall 2000 - Spring 2005
+
+        <p>
+            I worked on numerous projects at UIUC, the most important being <A
+                href="http://llvm.org">LLVM</a> and <a
+                href="http://llvm.org/pubs/2005-05-04-LattnerPHDThesis.html">Data Structure
+            Analysis</a> (DSA).  At Illinois, I designed and built most of the fundamental
+            aspects of LLVM, establishing the architecture for things to come and building most
+            of the scalar, loop and interprocedural optimizers.  I also built most of the
+            target-independent code generator, X86 backend, JIT, llvm-gcc3 front-end, and
+            much more.  Finally, I <a href="#pubs">wrote many papers</a>.</p>
+    </li>
+
+    <li>
+        Microsoft Research: Programmer Productivity Research Center<br>
+        <b>Research Intern</b><br>
+        Summer 2004
+
+        <p>
+            I worked on the Microsoft Phoenix compiler infrastructure, building an
+            experimental bridge between the Microsoft compiler and the LLVM compiler
+            (which allowed LLVM to compile and run .NET code).
+            In the process, I identified and fixed numerous bugs in the (still in
+            early development) Microsoft compiler.</p>
+    </li>
+</ul>
+
+<h3>IBM NUMA-Q / Sequent Computer Systems:</h3>
+
+<ul>
+    <li>
+        Operating Systems Group<br>
+        <b>Software Engineer Contractor</b><br>
+        May '00 - Aug '00
+
+        <p>I virtualized the Linux Kernel to run as a user-level application under
+            the Dynix/PTX operating system.  This provided 100% compatibility
+            with existing Linux binaries, but this project was never productized.</p>
+    </li>
+
+    <li>
+        Compilers &amp; Tools Group<br>
+        <b>Software Engineer Contractor</b><br>
+        May '99 - Dec '99
+
+        <p>I was involved with the 4.5 release of Sequent's PTX OS, which added
+            kernel threads.  I was primarily involved porting the Java Virtual Machine
+            from user-level threads to native threads, but was also drive debugged many
+            kernel issues in the pthreads implementation.  I also added thread awareness
+            to the system debugger.</p>
+
+    <li>
+        Operating Systems Group<br>
+        <b>Software Engineer Intern</b><br>
+        Jan '99 - Apr '99
+
+        <p>I worked 16 hrs/wk developing an online remote kernel debugger based
+            on GDB.</p>
+
+    <li>
+        Compilers &amp; Tools Group<br>
+        <b>Software Engineer Intern</b><br>
+        May-Aug, Dec '98
+
+        <p>My primary work was to port Sun's Java Virtual Machine to the
+            Dynix/PTX OS.  This involved work in both C &amp; Java, in systems as
+            varied as user-level threads, garbage collection, and asynchronous
+            I/O.</p>
+</ul>
+
+<!--
+<h3>Earlier Work Experience:</h3>
+<ul>
+<li>FEI Company<br>
+<b>Software Engineer</b><br>
+May-Aug, Dec '97
+
+<p>I designed a system for integrating an optical microscope into an
+  automated hard-drive head trimming application.  My work involved
+  creating numerous C++ programs, communicating with various branches
+  of FEI, and dealing with customers (both remote and on-site).</p>
+  </li>
+
+  <li> Cherokee Communications Corp<br>
+  <b>Head of R&amp;D</b><br>
+  Fall 1997 - 1999
+
+  <p>Cherokee was a small start-up company where I lead the development of
+  a sophisticated application for managing and tracking web page
+  statistics.  Although Cherokee is now defunct, <a
+	  href="http://nondot.org/MagicStats/">MagicStats</a> is still
+  available under the GPL.</p>
+
+  <li>Intel Corp<br>
+  <b>Software Design Tester</b><br>
+  May '96 - Aug '96
+
+  <p>I tested applications and hardware for the (then unreleased) MMX
+  product line.</p>
+  </li>
+
+</ul>
+
+-->
+
+<h2><a name="education">Education</a></h2>
+
+<p>
+    <b><a href="http://www.cs.illinois.edu">University of Illinois,
+        Urbana-Champaign</a></b> - Urbana, Illinois - GPA: 4.0
+</p>
+<ul>
+    <li>Ph.D. Computer Science: Spring 2002 - Spring 2005<br>
+        Thesis: "<a
+                href="http://llvm.org/pubs/2005-05-04-LattnerPHDThesis.html">Macroscopic
+            Data Structure Analysis and Optimization</a>"</li>
+    <li>M.S.  Computer Science: Fall 2000 - Fall 2002<br>
+        Thesis: "<a
+                href="http://llvm.org/pubs/2002-12-LattnerMSThesis.html">LLVM:
+            An Infrastructure for Multi-Stage Optimization</a>"</li>
+</ul>
+
+<p>
+    <b><a href="http://www.up.edu">University of Portland</a></b> -
+    Portland, Oregon - GPA: 3.9
+</p>
+<ul>
+    <li>B.S. Computer Science: Fall 1996 - Spring 2000</li>
+</ul>
+
+<h2><a name="talks">Invited Talks</a></h2>
+
+<ol>
+    <li>"<a href="https://news.realm.io/news/wwdc-2017-swift-panel/">WWDC 2017 Swift Panel</a>"<br>
+        Realm WWDC Panel, <i>June 8, 2017.</i></li>
+    <li>"<a href="https://itunes.apple.com/us/podcast/swiftcoders/id1082937962?mt=2#">Interview: My personal backstory</a>"</li>
+    <li><a href="https://itunes.apple.com/us/podcast/swiftcoders/id1082937962">SwiftCoders Podcast, Episode 37</a>, <i>January 23, 2017.</i></li>
+
+    <li>"<a href="http://atp.fm/episodes/205">Interview: Swift history and design</a>" (<a href="http://atp.fm/205-chris-lattner-interview-transcript">transcript</a>)<br>
+        <i><a href="http://atp.fm">Accidental Tech Podcast, Episode 205</a>, January 19, 2017.</i></li>
+    <li>"<a href="http://researcher.watson.ibm.com/researcher/files/us-lmandel/lattner.pdf">Swift: Opportunities for Language and Compiler Research</a>"<br>
+        <i><a href="http://researcher.watson.ibm.com/researcher/view_group_subpage.php?id=6940">IBM PL Day 2016</a></i>, Yorktown Heights, NY, December 2016.</li>
+    <li>"<a href="https://developer.apple.com/videos/play/wwdc2016/102/">Swift 3 Introduction, Platform State of the Union</a>" - Section starts at 16:30<br>
+        <i>2016 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA, June 2016.</li>
+
+    <li>"<a href="https://developer.apple.com/videos/play/wwdc2016/402/">What's New in Swift 3</a>" - Middle third of the talk<br>
+        <i>2016 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA, June 2016.</li>
+
+    <li>"Keynote: Swift &amp; Xcode Playgrounds Demo"<br>
+        <i><a href="http://www.ibm.com/cloud-computing/us/en/interconnect/">IBM Interconnect 2016</a></i>, Las Vegas, NV, February 2016.</li>
+
+    <li>"<a href="http://llvm.org/devmtg/2015-10/#talk7">Swift's High-Level IR: A Case Study of Complementing LLVM IR with Language-Specific Optimization</a> - second half of talk<br>
+        <i><a href="http://llvm.org/devmtg/2015-10/">2015 LLVM Developer's Meeting</a></i>, San Jose, CA, November 2015.</li>
+
+    <li><a href="https://developer.apple.com/videos/play/wwdc2015/102/">Swift 2 Introduction, Platform State of the Union</a> - Section starts at 56:40<br>
+        <i>2015 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA, June 2015.</li>
+
+    <li><a href="https://developer.apple.com/videos/play/wwdc2015/106/">What's new in Swift 2</a> - First half of talk<br>
+        <i>2015 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA, June 2015.</li>
+
+    <li>"<a href="http://www.apple.com/apple-events/june-2014/">Apple Keynote, Swift Launch Demo</a> - Swift Launch, starts at 103:50 my demo starts at 107:15<br>
+        <i>2014 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA, June 2014.</li>
+
+    <li>"<a href="2013-11-07-LLVMDevMtg-LLVMEarlyDays.pdf">LLVM - The Early
+        Days</a> - first half of a talk<br>
+        <i><a href="http://llvm.org/devmtg/2013-11/">2013 LLVM Developer's Meeting</a></i>, San Francisco, CA, November 2013.</li>
+
+    <li>"<a href="2013-10-23-SECR-LLVM.pdf">LLVM and Clang - Advancing Compilers
+        and Tools</a><br>
+        Opening Keynote, <i>2013 Central and Eastern European Software Engineering Conference in Russia (<a href="http://2013.secr.ru/lang/en/">CEE-SECR 2013</a>)</i>,
+        Moscow, Russia, October 2013.<br>
+        Selected as the <a href="http://2013.secr.ru/lang/en/program/best-presentations">best invited talk</a> by conference attendees.</li>
+
+    <li>"<a href="https://developer.apple.com/videos/play/wwdc2013/400/">What's New in Xcode 5</a><br>
+        <i>2013 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA, June 2013.</li>
+
+    <li>"<a href="http://developer.apple.com/videos/wwdc/2012/">Developer Tools
+        Kickoff"</a> (shared talk)<br>
+        <i>2012 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA,
+        June 2012.</li>
+    <li>"<a href="2012-04-02-CGOKeynote.pdf">Increasing Industry Impact of Compiler
+        Optimization Research"</a><br>
+        Opening Keynote, <i>2012 International Symposium on Code Generation and Optimization (<a
+                href="http://www.cgo.org/cgo2012/index.html">CGO'12</a>)</i>, San Jose, CA,
+        April 2012.</li>
+    <li>"<a href="http://llvm.org/pubs/2011-02-FOSDEM-LLVMAndClang.html">LLVM and
+        Clang: Advancing Compiler Technology</a><br>
+        Keynote, <i>Free and Open Source Developers' European Meeting (<a
+                href="http://fosdem.org/2011/">FOSDEM'11</a>)</i>, Brussels, Belgium, February 2011.</li>
+    <li>"<a href="http://developer.apple.com/videos/wwdc/2010/">What's New in the
+        LLVM Compiler"</a> (shared talk)<br>
+        <i>2010 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA,
+        June 2010.</li>
+
+    <li>"<a href="http://llvm.org/devmtg/2009-10/">State of Clang</a>" (shared
+        talk) and several other pieces of the meeting, such as the introduction,
+        open discussion forum, etc.<br>
+        <i>LLVM Developer Meeting</i>, Cupertino, CA, Oct 2009.</li>
+    <li>"Developer Tools State of the Union" (shared talk)<br>
+        <i>2009 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA,
+        June 2009.</li>
+    <li>"Compiler State of the Union" (shared talk)<br>
+        <i>2009 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA,
+        June 2009.</li>
+    <li>"<a
+            href="http://llvm.org/pubs/2008-10-04-ACAT-LLVM-Intro.html">Introduction
+        to the LLVM Compiler System</a>"<br>
+        Plenary Talk, <i><a href="http://acat2008.cern.ch/">ACAT 2008</a>: Advanced
+            Computing and Analysis Techniques in Physics Research</i>, Erice,
+        Sicily, Italy, November 2008.</li>
+    <li>"Compiler State of the Union" (shared talk)<br>
+        <i>2008 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA,
+        June 2008.</li>
+    <li>"LLVM Compiler In Depth" (shared talk)<br>
+        <i>2008 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA,
+        June 2008.</li>
+    <li>"<a href="http://llvm.org/pubs/2008-05-17-BSDCan-LLVMIntro.html">LLVM and
+        Clang: Next Generation Compiler Technology</a>"<br>
+        <i><a href="http://www.bsdcan.org/2008/">BSDCan 2008</a></i>, Ottawa, Canada,
+        May 16-17, 2008.</li>
+    <li>"<a href="http://conferences.oreillynet.com/cs/os2007/view/e_sess/12824">The
+        LLVM Compiler System</a>"<br>
+        <i>2007 O'Reilly Open Source Convention</i>, Portland, OR, July 2007.</li>
+    <li>"<a href="http://llvm.org/pubs/2007-07-25-LLVM-2.0-and-Beyond.html">LLVM
+        2.0 and Beyond!</a>"<br>
+        <i>Google Tech Talk</i>, Mountain View, CA, July 25, 2007.</li>
+    <li>"Taking Advantage of Compiler Advances" (shared talk)<br>
+        <i>2007 Apple World Wide Developer Conference (WWDC)</i>, San Francisco, CA,
+        June 2007.</li>
+    <li>"<a href="http://llvm.org/devmtg/2007-05/">LLVM in OpenGL and for Dynamic
+        Languages</a>" (and several others)<br>
+        <i>LLVM Developer Meeting</i>, Cupertino, CA, May 2007.</li>
+    <li>"<a href="http://llvm.org/pubs/2007-03-12-BossaLLVMIntro.html">The LLVM
+        Compiler System</a>"<br>
+        <i>2007 Bossa Conference on Open Source, Mobile Internet and Multimedia</i>,
+        Recife, Brazil, March 2007.</li>
+    <li>"<a href="http://llvm.org/pubs/2006-04-25-GelatoLLVMIntro.html">Introduction
+        to the LLVM Compiler Infrastructure</a>"<br>
+        <i>2006 Itanium Conference and Expo</i>, San Jose, California, April 2006.</li>
+</ol>
+
+
+<h2><a name="books">Book Chapter</a></h2>
+
+<p>In 2011, I wrote a chapter on LLVM for "<a
+        href="http://www.aosabook.org/">The Architecture of Open Source
+    Applications</a>," a book on software design.  <a
+        href="http://www.aosabook.org/en/llvm.html">The chapter</a> describes
+    traditional compiler design, what makes LLVM different, how
+    library-based design impacts applicability of the code, and how some simple
+    optimizations work.</p>
+
+
+<h2><a name="pubs">Refereed Publications</a></h2>
+
+<p>Since joining industry, I rarely take time to write papers about my
+    work, preferring instead to focus on building new great things.  That
+    said, LLVM is widely used as a basis for <a
+            href="http://llvm.org/pubs/">many current and past research
+        projects</a> by other people.</p>
+
+<ol>
+
+    <li>"<a href="http://llvm.org/pubs/2007-06-10-PLDI-DSA.html">Making
+        Context-sensitive Points-to Analysis with Heap Cloning
+        Practical For The Real World</a>"<br>
+        Chris Lattner, Andrew Lenharth, and Vikram Adve<br>
+        <a href="http://ties.ucsd.edu/PLDI/">PLDI 2007</a>, San Diego, CA, June
+        2007</li>
+
+    <li>"<a href="http://llvm.org/pubs/2005-05-21-PLDI-PoolAlloc.html">Automatic Pool Allocation: Improving Performance by Controlling Data
+        Structure Layout in the Heap</a>"<br>
+        Chris Lattner &amp; Vikram Adve<br>
+        <a href="http://research.ihost.com/pldi2005/">PLDI 2005</a>, Chicago, IL, June 2005.<br>
+        <b>Awarded PLDI 2005 Best Paper Award</b>
+    </li>
+
+    <li>"<a href="http://llvm.org/pubs/2005-06-12-MSP-PointerComp.html">Automatic
+        Pointer Compression for Linked Data Structures</a>"<br>
+        Chris Lattner &amp; Vikram Adve<br>
+        ACM SIGPLAN 2005 Workshop on Memory System Performance (MSP'05)
+        Chicago, IL, June 2005.
+    </li>
+
+    <li>"<a href="http://llvm.org/pubs/2005-02-TECS-SAFECode.html">Memory Safety
+        Without Runtime Checks or Garbage Collection</a>"<br>
+        Dinakar Dhurjati, Sumant Kowshik, Vikram Adve &amp; Chris Lattner<br>
+        2005 Transactions in Embedded Computing Systems (TECS'05)<br>
+        <b>Journal Publication</b>
+    </li>
+
+    <li>"<a href="http://llvm.org/pubs/2004-09-22-LCPCLLVMTutorial.html">The LLVM
+        Compiler Framework and Infrastructure Tutorial</a>"<br>
+        Chris Lattner &amp; Vikram Adve<br>
+        LCPC'04 Workshop on Compiler Research Infrastructures, West Lafayette,
+        Indiana, Sep. 2004.
+    </li>
+
+    <li>"<a href="http://llvm.org/pubs/2004-01-30-CGO-LLVM.html">LLVM: An
+        Aggressive Compilation Framework for Life-Long Program Analysis
+        and Transformation</a>"<br>
+        Chris Lattner &amp; Vikram Adve<br>
+        <a href="http://www.cgo.org/">CGO 2004</a>, San Jose, CA, March 2004.<br>
+        <b>Best Student Presenter Award</b><br>
+        <b><a href="http://cgo.org/cgo2014/conference/awards/">Test of Time
+            Award</a></b> for the most influential paper of CGO 2004
+        (awarded at CGO 2014).
+    </li>
+
+    <li>"<a href="http://llvm.org/pubs/2003-10-01-LLVA.html">LLVA: A Low-level
+        Virtual Instruction Set Architecture</a>"<br>
+        Vikram Adve, Chris Lattner, Michael Brukman, Anand Shukla, &amp; Brian
+        Gaeke<br>
+        <a href="http://www.microarch.org/micro36/">MICRO-36 2003</a>, San Diego, CA, December 2003.
+    </li>
+
+    <li>"<a href="http://llvm.org/pubs/2003-05-05-LCTES03-CodeSafety.html">Memory
+        Safety Without Runtime Checks or Garbage Collection</a>"<br>
+        Dinakar Dhurjati, Sumant Kowshik, Vikram Adve, &amp; Chris Lattner<br>
+        Proc. Languages Compilers and Tools for Embedded Systems 2003 (LCTES 03),
+        San Diego, CA, June 2003.
+    </li>
+
+    <li>"<a href="http://llvm.org/pubs/2003-05-01-GCCSummit2003.html">Architecture
+        For a Next-Generation GCC</a>"<br>
+        Chris Lattner &amp; Vikram Adve<br>
+        First Annual GCC Developers' Summit, Ottawa, Canada, May 2003.
+    </li>
+
+    <li>"<a
+            href="http://llvm.org/pubs/2002-06-AutomaticPoolAllocation.html">Automatic Pool Allocation for Disjoint Data Structures</a>"<br>
+        Chris Lattner &amp; Vikram Adve<br>
+        ACM SIGPLAN 2002 Workshop on Memory System Performance (MSP'02),
+        Berlin, Germany, June 2002.
+    </li>
+
+    <li>"Developing a Graphical Robotics Simulator"<br>
+        Ming-Shu Hsu &amp; Chris Lattner<br>
+        IASTED International Conference, Modeling &amp; Simulation (MS'99)
+    </li>
+
+</ol>
+
+<h2><a name="other">Other Interests and Activities</a></h2>
+
+<p>In addition to technical activities:</p>
+<ul>
+    <li>I am married (to Tanya), have two kids (Zac and Riley), and a dog (Zoey).</li>
+    <li>I enjoy woodworking, downhill skiing, swimming, and walking our dogs.</li>
+    <li>I was a competitive fencer and was president of the University of
+        Illinois Classical Fencing club.  I taught an introduction to fencing class in 2003-2004, with
+        a class of ~15 people.</li>
+</ul>
+
+<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html32" height="31" width="88"></a> </p>
+
+</body>
+</html>
+

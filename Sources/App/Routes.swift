@@ -2,6 +2,15 @@ import Vapor
 
 extension Droplet {
     func setupRoutes() throws {
+
+        get { req in
+            return try self.view.make("intro.html")
+        }
+        
+        get("resume") { req in
+            return try self.view.make("resume.html")
+        }
+        
         get("hello") { req in
             var json = JSON()
             try json.set("hello", "world")
