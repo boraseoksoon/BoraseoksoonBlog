@@ -3,13 +3,23 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="description" content="Hacker in whatever.">
 
+
     <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    
+    <!--  
+     <link rel="stylesheet" type="text/css" href="http://boraseoksoon.com/bootstrap/css/bootstrap.min.css"> 
+     -->
+
     <style type="text/css">
+    	/*
         body {
             margin: 20px;
             font-family: 'Apple SD Gothic Neo', 'Helvetica', 'Arial';
@@ -24,8 +34,24 @@
             top:  35%;
             left: 50%;
             transform: translate(-50%,-50%);
-
         }
+		*/
+
+		.content-wrap {
+			margin: 20px;
+            font-family: 'Apple SD Gothic Neo', 'Helvetica', 'Arial';
+            
+			width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+
+            position: absolute;
+            top:  50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+		}
+
 
         .profileimg {
             border-radius: 75px;
@@ -53,6 +79,7 @@
             font-size: 1.1em;
         }
 
+        /*
         @media screen and (min-width: 550px) {
             .content-wrap {
                 margin-left: 30px;
@@ -66,7 +93,7 @@
                 margin-top: 35px;
             }
         }
-
+		*/
         @media screen and (max-width: 550px) {
             .container {
                 width: 260px;
@@ -76,51 +103,36 @@
                 font-size: 0.5em;
             }
         }
+        
     </style>
 </head>
 <body>
 
 <div class="container">
-
-
     <div class="content-wrap">
-
         <div class="text-center">
             <img class="profileimg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAApAAAAAJGFjYTM5ZDYyLTU0MTktNGM0NS04YmFmLTA1OTFmOWQ1ZmE2Ng.jpg" class="rounded" alt="photo" width="200" height="200">
         </div>
 
         <div align="center">
-            <p><h1><strong>Seoksoon Jang</strong></h1></p>
-            <p><h6>Welcome to my homepage</h6>
-        </div>
-        <br>
-        <div class="col-xs-1" align="center">
-            <button type="button" class="btn btn-primary" onclick="sendEmail()">Send mail</button>
-        </div>
+            <p><h1><strong>Jang Seoksoon</strong></h1></p>
+            Welcome to my homepage
+            <h6></h6>
+			<button type="button" class="btn btn-primary" onclick="sendEmail()">Send mail</button>
+        	
+        	<br>
+        	<br>
 
-        <br>
-        <div>
-            <p>
-            <ul>
-                <li>Here is my <a href="/resume">Resume.</a></li>
-                <li>I am <a href="https://github.com/boraseoksoon">@boraseoksoon</a> on Github.</li>
-                <li>I am <a href="https://stackoverflow.com/users/3426053/boraseoksoon/">@boraseoksoon</a> on StackOverflow</li>
-                <li>I am <a href="https://medium.com/@boraseoksoon/">@boraseoksoon</a> on Medium.</li>
-                <li>This is my <a href="https://www.linkedin.com/in/seoksoon-jang-2042498a/">Linked-in</a> page.</li>
-                <li>Sometimes, I enjoy work as freelancer Hacker in <a href="https://www.wishket.com/partners/p/boraseoksoon/">Wishket</a>.</li>
-            <!--
-                <li>I am interested in creating large scale and data-intensive software for end-user that changes world like Google and Facebook.</li>
-                <li>My objective is to create and improve large scale and data-intensive software for end-user that changes world like Google and Facebook using from low level to high-level abstracted software stack if needed.</li>
-            -->
-                <!--
-                <li>Other Opensource repositories I use are as below</li>
-                    <ul>
-                        <li><a href="https://cocoapods.org/owners/2462">CocoaPods</a></li>
-                    </ul>
-                </ul>
-                -->
-            </ul>
-            </p>
+	        <div>
+	            <p>
+	            	<h5>Here is my <a href="/resume">Resume.</a></h5>
+	                <h5>I am <a href="https://github.com/boraseoksoon">@boraseoksoon</a> on Github.</h5>
+	                <h5>I am <a href="https://stackoverflow.com/users/3426053/boraseoksoon/">@boraseoksoon</a> on StackOverflow</h5>
+	                <h5>I am <a href="https://medium.com/@boraseoksoon/">@boraseoksoon</a> on Medium.</h5>
+	                <h5>This is my <a href="https://www.linkedin.com/in/seoksoon-jang-2042498a/">Linked-in</a> page.</h5>
+	                <h5>Sometimes, I enjoy hacking at <a href="https://www.wishket.com/partners/p/boraseoksoon/">Wishket</a>.</h5>
+	            </p>
+	        </div>
         </div>
     </div>
 </div>
