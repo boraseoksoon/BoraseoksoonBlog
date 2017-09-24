@@ -12,7 +12,7 @@ extension Droplet {
       return try self.view.make("resume.html")
     }
     
-    get("test") { req in
+    get("testCode") { req in
       return try self.view.make("sampleHTMLCode.html")
     }
     
