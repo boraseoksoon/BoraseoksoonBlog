@@ -16,7 +16,6 @@ extension Droplet {
       return try self.view.make("sampleHTMLCode.html")
     }
     
-    
     get("hello") { req in
       var json = JSON()
       try json.set("hello", "world")
